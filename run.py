@@ -1,19 +1,13 @@
-import gspread
-from oauth2client.service_account import Credentials
+"""Create memory game"""
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
+import random
 
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('love_sandwiches')
+GRID_SIZE = 4
+SYMBOLS = "ABCDEFGHIJKLMNOPQRST"
+CARDS = random.sample(SYMBOLS, GRID_SIZE * GRID_SIZE // 2) * 2
+random.shuffle(CARDS)
+board = [[None] * GRID_SIZE for _ in range(GRID_SIZE)]
 
-sales = SHEET.worksheet('sales')
-
-data = sales.get_all_values()
-
-print(data)
+for row in range(GRID_SIZE):
+    for col in range(GRID_SIZE):
+        board[row][col] = CARDS.pop()

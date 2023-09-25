@@ -34,7 +34,11 @@ def is_winner(revealed):
     return True
 
 
+# Main function.
+
+
 def main():
+    """Main function."""
     revealed = [[False] * GRID_SIZE for _ in range(GRID_SIZE)]
     tries = 0
     score = 0

@@ -79,7 +79,7 @@ def main():
                 print("Invalid input, try again.")
 
         # Reveal selected cards.
-        tries += 1
+        attempts += 1
         if BOARD[row1][col1] == BOARD[row2][col2]:
             print("It´s a match!")
             revealed[row1][col1] = revealed[row2][col2] = True
@@ -88,7 +88,7 @@ def main():
             print("Not a match. Try again!")
 
     print("Yeeey! You won!")
-    print(f"Total Tries: {tries} Total Score: {score}")
+    print(f"Total Attempts: {attempts} Total Score: {score}")
 
     if __name__ == "__main__":
         main()

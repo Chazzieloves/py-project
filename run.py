@@ -76,7 +76,7 @@ Good luck!
 -----------------
                 """
             )
-            sleep(5)
+            sleep(10)
             game_start = False
         print(revealed)
         display_board_preview(BOARD, revealed)

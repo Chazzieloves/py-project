@@ -21,7 +21,7 @@ def display_board(board, revealed):
     """Display board."""
     for line in range(GRID_SIZE):
         for card in range(GRID_SIZE):
-            if not revealed[line][card]:
+            if revealed[line][card]:
                 print(board[line][card], end=" ")
             else:
                 print("?", end=" ")
@@ -32,7 +32,7 @@ def display_board_preview(board, revealed):
     """Display board."""
     for line in range(GRID_SIZE):
         for card in range(GRID_SIZE):
-            if revealed[line][card]:
+            if not revealed[line][card]:
                 print(board[line][card], end=" ")
             else:
                 print("?", end=" ")
@@ -61,19 +61,22 @@ def main():
         os.system("cls" if os.name == "nt" else "clear")
         if game_start:
             print(
-                "Test your memory!"
-                " ----- RULES -----"
-                "Try to find the pair of letters underneath the '?'"
-                "To choose two cards, enter the row and column number like this '1 2, 0 3'."
-                "The first number you add represents row and the next column."
-                "The comma sparates the selected cards."
-                "You can only reveal two cards at a time."
-                "If they match, you get a point!"
-                "If they do not, try again!"
-                "The game end when you find all the pairs."
-                "Good luck!"
-                " -----------------"
+                f"""
+Test your memory!
+----- RULES -----
+Try to find the pair of letters underneath the '?'
+To choose two cards, enter the row and column number like this '1 2, 0 3'.
+The first number you add represents row and the next column.
+The comma sparates the selected cards.
+You can only reveal two cards at a time.
+If they match, you get a point!
+If they do not, try again!
+The game end when you find all the pairs
+Good luck!
+-----------------
+                """
             )
+            sleep(5)
             game_start = False
         print(revealed)
         display_board_preview(BOARD, revealed)

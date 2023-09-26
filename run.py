@@ -40,12 +40,12 @@ def is_winner(revealed):
 def main():
     """Main loop."""
     revealed = [[False] * GRID_SIZE for _ in range(GRID_SIZE)]
-    tries = 0
+    attempts = 0
     score = 0
 
     while not is_winner(revealed):
         display_board(BOARD, revealed)
-        print(f"Tries: {tries} Score: {score}")
+        print(f"Attempts: {attempts} Score: {score}")
 
         # Get input from user on first card.
         while True:

@@ -136,5 +136,6 @@ def main():
     print("Yeeey! You won!")
     print(f"Total Attempts: {attempts} Total Score: {score}")
 
-    if __name__ == "__main__":
-        main()
+
+if __name__ == "__main__":
+    main()

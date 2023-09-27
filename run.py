@@ -65,14 +65,14 @@ def main():
 Test your memory!
 ----- RULES -----
 Try to find the pairs of letters underneath the '?'
-To choose a card, enter the row and column number like this '1 2' 
-(1 space 2) then enter. 
-The first number you add represents row and the next column.
-You can only choose one card at a time. Once you have chosen the 
-first card, 
+To choose a card from the board, inside the terminal, 
+enter the row (first number) and column (second number)
+like this '1 2' then enter. 
+Repeat to choose the second card.
 If they match, you get a point!
 If they do not, try again!
-The game end when you find all the pairs
+The game end when you find all the pairs,
+you have a few seconds to memorize the board.
 Good luck!
 -----------------
                 """

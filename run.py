@@ -65,14 +65,16 @@ def main():
 Test your memory!
 ----- RULES -----
 Try to find the pairs of letters underneath the '?'
-To choose a card from the board, inside the terminal, 
+To choose a card from the board, inside the terminal,
 enter the row (first number) and column (second number)
-like this '1 2' then enter. 
+like this '1 2' then enter. Choose two numbers between 0-3.
 Repeat to choose the second card.
 If they match, you get a point!
 If they do not, try again!
 The game end when you find all the pairs,
 you have a few seconds to memorize the board.
+The board is revealed below for a few seconds,
+try to remember where all the letters are.
 Good luck!
 -----------------
                 """

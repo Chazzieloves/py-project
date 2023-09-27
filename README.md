@@ -1,31 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Py Memory game
 
-Welcome USER_NAME,
+![Responsive Mockup](images/)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+LÄGG TILL LÄNK! *The link to [the Maddest Madlib](https://the-maddest-madlib.onrender.com)*
 
-## Reminders
+Py Memory game is a Python terminal game, which runs in the Code Institue mock terminal on Heroku
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+Users can attempt to find all the pairs of letters behind the '?'. The game end when all pairs are found.
 
-## Creating the Heroku app
+---
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Introduction 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+This is a simple memory game implemented in Python. The objective of the game is to find pairs of cards with matching letters by revealing them one at a time. The game continues until all pairs are found, and your goal is to complete it with as few attempts as possible. 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Rules 
+- The game board consists of a grid with face-down cards. 
+- Players take turns revealing two cards at a time by specifying their row and column numbers.
+- If the two revealed cards have matching symbols, they are considered a pair and are displayed on the board.
+- If the two revealed cards do not match, they are returned to a face-down position. - Players continue taking turns until all pairs have been found.
+- The game ends when all pairs are matched, and the player's performance is measured by the number of attempts made to complete the game.
+-
+## How to Play 
+1. Run the Python script to start the game.
+2. Follow the on-screen instructions to reveal pairs of cards.
+3. Enter the row and column numbers of the cards you want to reveal (e.g., "1 2, 0 3").
+4. The game will inform you if the selected cards match or not.
+5. Continue playing until all pairs are found and the game ends.
+6. Your score will be displayed, indicating the number of attempts it took to complete the game.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
-Connect your GitHub repository and deploy as normal.
+## Dependencies 
 
-## Constraints
+This game does not require any external dependencies. It uses standard Python libraries and is compatible with both Python 2 and Python 3. 
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+## Running the Game To run the game, execute the Python script using your preferred Python interpreter. ```bash python memory_game.py

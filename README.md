@@ -1,31 +1,33 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Py Memory game
+![Memory game](../images/py-memory-play.PNG)
 
-Welcome USER_NAME,
+*The link to [Py Memory game](https://py-memory-game-05854a12957d.herokuapp.com/)*
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+---
 
-## Reminders
+## Introduction 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+This is a simple memory game implemented in Python. The objective of the game is to find pairs of cards with matching letters by revealing them one at a time. The game continues until all pairs are found, and your goal is to complete it with as few attempts as possible. 
 
-## Creating the Heroku app
+## Rules 
+- The game board consists of a grid with face-down cards. 
+- Players take turns revealing two cards at a time by specifying their row and column numbers.
+- If the two revealed cards have matching symbols, they are considered a pair and are displayed on the board.
+- If the two revealed cards do not match, they are returned to a face-down position. - Players continue taking turns until all pairs have been found.
+- The game ends when all pairs are matched, and the player's performance is measured by the number of attempts made to complete the game.
+-
+## How to Play 
+1. Run the Python script to start the game.
+   ![Memory game](images/py-memory-start.png)
+2. Follow the on-screen instructions to reveal pairs of cards.
+4. Enter the row and column numbers of the card you want to reveal (e.g., "1 2").
+   ![Memory game](images/py-memory-play.png)
+5. The game will inform you if the selected cards match or not.
+   ![Memory game](images/py-memory-play.png)
+6. Continue playing until all pairs are found and the game ends.
+   ![Memory game](images/py-memory-play.png)
+7. Your score will be displayed, indicating the number of attempts it took to complete the game.
+   ![Memory game](images/py-memory-play.png)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!

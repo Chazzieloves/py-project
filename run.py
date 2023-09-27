@@ -64,11 +64,12 @@ def main():
                 f"""
 Test your memory!
 ----- RULES -----
-Try to find the pair of letters underneath the '?'
-To choose two cards, enter the row and column number like this '1 2, 0 3'.
+Try to find the pairs of letters underneath the '?'
+To choose a card, enter the row and column number like this '1 2' 
+(1 space 2) then enter. 
 The first number you add represents row and the next column.
-The comma sparates the selected cards.
-You can only reveal two cards at a time.
+You can only choose one card at a time. Once you have chosen the 
+first card, 
 If they match, you get a point!
 If they do not, try again!
 The game end when you find all the pairs
@@ -80,7 +81,7 @@ Good luck!
             game_start = False
         print(revealed)
         display_board_preview(BOARD, revealed)
-        sleep(2)
+        sleep(15)
         os.system("cls" if os.name == "nt" else "clear")
         display_board(BOARD, revealed)
         # if False * GRID_SIZE in revealed:
@@ -90,7 +91,9 @@ Good luck!
         # Get input from user on first card.
         while True:
             try:
-                row1, col1 = map(int, input("Enter row and column: ").split())
+                row1, col1 = map(
+                    int, input("Enter row and column for the first card: ").split()
+                )
                 if (
                     0 <= row1 < GRID_SIZE
                     and 0 <= col1 < GRID_SIZE
@@ -98,16 +101,16 @@ Good luck!
                 ):
                     break
                 else:
-                    print("Try again.")
+                    print("Invalid input, try again.")
             except ValueError:
-                print("Try again.")
+                print("Invalid input, try again.")
 
         # Get input from user on second card.
         while True:
             try:
                 row2, col2 = map(
                     int,
-                    input("Enter row and column in following format: '1 3' ").split(),
+                    input("Enter row and column for second card: ").split(),
                 )
                 if (
                     0 <= row2 < GRID_SIZE

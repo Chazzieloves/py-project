@@ -1,5 +1,5 @@
 # Py Memory game
-![Memory game](images/py-memory-play.PNG)
+![Memory game](../images/py-memory-play.PNG)
 
 *The link to [Py Memory game](https://py-memory-game-05854a12957d.herokuapp.com/)*
 

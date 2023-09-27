@@ -1,6 +1,6 @@
 # Py Memory game
 
-![Responsive Mockup](images/py-memory-play)
+![Responsive Mockup](images/py-memory-play.png)
 
 LÄGG TILL LÄNK! *The link to [the Maddest Madlib](https://the-maddest-madlib.onrender.com)*
 

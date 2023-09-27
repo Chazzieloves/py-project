@@ -1,8 +1,7 @@
 # Py Memory game
+![Memory game](images/py-memory-play.PNG)
 
-![Responsive Mockup](images/py-memory-play.png)
-
-LÄGG TILL LÄNK! *The link to [the Maddest Madlib](https://the-maddest-madlib.onrender.com)*
+*The link to [Py Memory game](https://py-memory-game-05854a12957d.herokuapp.com/)*
 
 ---
 
@@ -19,15 +18,16 @@ This is a simple memory game implemented in Python. The objective of the game is
 -
 ## How to Play 
 1. Run the Python script to start the game.
+   ![Memory game](images/py-memory-start.png)
 2. Follow the on-screen instructions to reveal pairs of cards.
-3. Enter the row and column numbers of the cards you want to reveal (e.g., "1 2, 0 3").
-4. The game will inform you if the selected cards match or not.
-5. Continue playing until all pairs are found and the game ends.
-6. Your score will be displayed, indicating the number of attempts it took to complete the game.
+4. Enter the row and column numbers of the card you want to reveal (e.g., "1 2").
+   ![Memory game](images/py-memory-play.png)
+5. The game will inform you if the selected cards match or not.
+   ![Memory game](images/py-memory-play.png)
+6. Continue playing until all pairs are found and the game ends.
+   ![Memory game](images/py-memory-play.png)
+7. Your score will be displayed, indicating the number of attempts it took to complete the game.
+   ![Memory game](images/py-memory-play.png)
 
 
-## Dependencies 
 
-This game does not require any external dependencies. It uses standard Python libraries and is compatible with both Python 2 and Python 3. 
-
-## Running the Game To run the game, execute the Python script using your preferred Python interpreter. ```bash python memory_game.py

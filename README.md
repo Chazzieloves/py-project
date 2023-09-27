@@ -1,12 +1,8 @@
 # Py Memory game
 
-![Responsive Mockup](images/)
+![Responsive Mockup](images/py-memory-play)
 
 LÄGG TILL LÄNK! *The link to [the Maddest Madlib](https://the-maddest-madlib.onrender.com)*
-
-Py Memory game is a Python terminal game, which runs in the Code Institue mock terminal on Heroku
-
-Users can attempt to find all the pairs of letters behind the '?'. The game end when all pairs are found.
 
 ---
 
